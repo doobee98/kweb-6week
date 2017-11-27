@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+    
+    <form action='/board/write' method='get'>
+        <input type='submit' value='글 쓰기'>
+    </form>
+    
+    <form action='/board/list' method='get'>
+        <input type='submit' value='글 목록'>
+    </form>
+</html>

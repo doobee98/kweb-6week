@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>글 쓰기</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action='/board/write' method='post'>
+        <div>제목</div><input type='text' method='post' name=''>
+        <div>작성자: <%= username%></div>
+        <textarea name='contents' cols='80' rows='10'>내용을 입력하세요.</textarea>
+        <input type='submit' value='전송'>
+    </form> 
+      
+    <form action='/home' method='get'>
+        <input type='submit' value='메인'>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>게시물 목록</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+        <div>게시물 목록</div>
+<!--    <% for (let i = 0; i < post.length; i++) {%>
+        <li><%= post[i]%></li>
+    <% }%>  -->
+    </ul>
+      
+    <form action='/board/write' method='get'>
+        <input type='submit' value='글 쓰기'>
+    </form>
+
+    <form action='/board/del' method='get'>
+        <input type='submit' value='글 지우기'>
+    </form>
+        
+    <form action='/home' method='get'>
+        <input type='submit' value='메인'>
+    </form>
+  </body>
+</html>
